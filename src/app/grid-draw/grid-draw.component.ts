@@ -141,7 +141,9 @@ export class GridDrawComponent implements OnInit {
           //draw it
           this.ctxGrid.strokeRect(x, y, this.shapedimension, this.shapedimension);
 
-          this.ctxGrid.drawImage(this.startImage, x, y, this.shapedimension, this.shapedimension);
+          this.ctxGrid.fillStyle = this.startNodeColor;
+
+          this.ctxGrid.fillRect(x, y, this.shapedimension, this.shapedimension);
 
         }
 
@@ -287,7 +289,7 @@ export class GridDrawComponent implements OnInit {
             this.ctxGrid.fillStyle = this.startNodeColor;
             this.shapes[i][j].type = "Start";
 
-            this.ctxGrid.drawImage(this.startImage, this.shapes[i][j].x, this.shapes[i][j].y, this.shapedimension, this.shapedimension);
+            this.ctxGrid.fillRect(this.shapes[i][j].x, this.shapes[i][j].y, this.shapedimension, this.shapedimension);
 
 
           }
@@ -839,7 +841,9 @@ export class GridDrawComponent implements OnInit {
           //draw it
           this.ctxGrid.strokeRect(this.shapes[i][j].x, this.shapes[i][j].y, this.shapedimension, this.shapedimension);
 
-          this.ctxGrid.drawImage(this.startImage, this.shapes[i][j].x, this.shapes[i][j].y, this.shapedimension, this.shapedimension);
+          this.ctxGrid.fillStyle = this.startNodeColor;
+
+          this.ctxGrid.fillRect(this.shapes[i][j].x, this.shapes[i][j].y, this.shapedimension, this.shapedimension);
         }
         if (dataNew[j][i] == "3") {
           this.ctxGrid.fillStyle = this.endNodeColor;
