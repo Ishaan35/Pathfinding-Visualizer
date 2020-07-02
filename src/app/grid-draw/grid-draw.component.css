@@ -1,0 +1,247 @@
+#square div{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-style: solid;
+    border-width: thin;
+}
+
+#myCanvas{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+
+    display: block;
+    border: 1px solid #000000;
+
+    position: absolute;
+    top: 60%;
+    transform: translate(0, -50%);  
+    left: 0;
+    right: 0;
+
+    width : pixelWidth * devicePixelRatio;
+    height: pixelHeight * devicePixelRatio;
+
+    transform: translate(0.5, 0.5);
+
+    
+}
+
+.MyPrimary{
+    background: #008aed;
+    color: white;
+    border: none;
+    outline: none;
+
+    margin-right: 5px;
+    display: inline-block;
+    height: 35px;
+    text-align: left;
+    line-height: 35px;
+    border-radius: 5px;  
+    transition: 0.1s;  
+    
+    font-size: small;
+}
+
+/*MyPrimary active and hover classes*/
+.MyPrimary:active{
+    background: #005fcc;
+    transition: 0.1s;
+
+    transform: scale(0.95);
+}
+.MyPrimary:hover{
+    cursor: pointer;
+}
+.MyPrimary:disabled{
+    background: #00649e;
+    color: #474747;
+    cursor: default;
+}
+
+
+.myAlgorithm{
+    background: #ff00d0;
+    color: white;
+    border: none;
+    outline: none;
+
+    margin-right: 5px;
+    display: inline-block;
+    height: 35px;
+    text-align: left;
+    line-height: 35px;
+    border-radius: 5px;  
+    transition: 0.1s;  
+    
+    font-size: small;
+}
+/*MyPrimary active and hover classes*/
+.myAlgorithm:active{
+    background: #ce02d9;
+    transition: 0.1s;
+
+    transform: scale(0.95);
+}
+.myAlgorithm:hover{
+    cursor: pointer;
+}
+
+.myAlgorithm:disabled{
+    background: #910096;
+    color: #474747;
+    cursor: default;
+}
+
+
+.myWalls{
+    background: #02bee8;
+    color: white;
+    border: none;
+    outline: none;
+
+    margin-right: 5px;
+    display: inline-block;
+    height: 35px;
+    text-align: left;
+    line-height: 35px;
+    border-radius: 5px;  
+    transition: 0.1s;  
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    
+    font-size: small;
+}
+.myWalls:active{
+    background: #00a4e6;
+    transition: 0.1s;
+
+    transform: scale(0.95);
+}
+.myWalls:hover{
+    cursor: pointer;
+}
+.myWalls:disabled{
+    background: #007e9e;
+    color: #474747;
+    cursor: default;
+}
+
+.myReset{
+    background: #00d12d;
+    color: white;
+    border: none;
+    outline: none;
+
+    margin-right: 5px;
+    display: inline-block;
+    height: 35px;
+    text-align: left;
+    line-height: 35px;
+    border-radius: 5px;  
+    transition: 0.1s;  
+    
+    font-size: small;
+}
+.myReset:active{
+    background: #03a125;
+    transition: 0.1s;
+
+    transform: scale(0.95);
+}
+.myReset:hover{
+    cursor: pointer;
+}
+.myReset:disabled{
+    background: #008214;
+    color: #474747;
+    cursor: default;
+}
+
+
+.Header{
+    display: inline-block;
+    background-color:#1d4580;
+    min-width:100%; 
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 13px;
+    margin-top: -10px;    
+    margin-left: -10px;
+
+    
+    box-shadow: 0px 5px 7px -4px rgba(0,0,0,0.75);
+
+}
+
+.HeaderText{
+    color: white;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top:16px;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropbtn{
+    background: #02bee8;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius:  5px;
+    height : 35px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.dropbtn:disabled{
+    background: #007e9e;
+    color: #474747;
+    cursor: default;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  background-color: #004887;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+/* buttons inside the dropdown */
+.dropdown-content a {
+  padding: 50px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+    border-radius: 10px;
+    transition: 5s;
+
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #0069c4; transition: 0.2s;}
+
+
+
+#instructionText{
+    padding-top: 575px;
+    padding-left: 20px;
+    color: #1d4580;
+}
+
+

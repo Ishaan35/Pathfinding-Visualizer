@@ -1,0 +1,61 @@
+<div class="Header">
+
+    <h4 class="HeaderText">Ishaan's Pathfinder</h4>
+    <button (click)="drawToggle()" class="MyPrimary" [disabled]="disableButtons">Walls </button>
+    <button (click)="eraseToggle()" class="MyPrimary" [disabled]="disableButtons">Remove Walls</button>
+    <button (click)="changeStartNodeOption()" class="MyPrimary" [disabled]="disableButtons">Change Start Node</button>
+    <button (click)="changeEndNodeOption()" class="MyPrimary" [disabled]="disableButtons">Change End Node</button>
+    <button (click)="dijkstraSearch_A_star_variation()" class="myAlgorithm" [disabled]="disableButtons"> Dijkstra's
+        Algorithm </button>
+    <button (click)="bfs_Search()" class=" myAlgorithm" [disabled]="disableButtons">BFS Algorithm
+    </button>
+    <button (click)="a_star_search()" class="myAlgorithm" [disabled]="disableButtons"> A* Algorithm</button>
+
+    <button (click)="RandomWalls()" class="myWalls" [disabled]="disableButtons"> Random Walls </button>
+
+
+    <div class="dropdown">
+        <button class="dropbtn" [disabled]="disableButtons">Sample Mazes</button>
+        <div class="dropdown-content">
+            <button (click)="sampleMaze('assets/Maze1.txt')" class="myWalls" [disabled]="disableButtons"> Sample Maze
+                #1</button>
+            <button (click)="sampleMaze('assets/Maze2.txt')" class="myWalls" [disabled]="disableButtons"> Sample Maze #2
+            </button>
+            <button (click)="sampleMaze('assets/Maze3.txt')" class="myWalls" [disabled]="disableButtons"> Sample Maze #3
+            </button>
+
+
+        </div>
+    </div>
+
+
+
+
+    <button (click)="resetGrid()" class="myReset" [disabled]="disableButtons">Reset</button>
+
+</div>
+
+
+
+
+
+
+
+<canvas id="myCanvas" width="1235" height="520">
+</canvas>
+
+
+<div id="instructionText">
+    <h1>How to Use:</h1>
+    <ul>
+        <li>Click on the Walls button and drag on the grid to create walls</li>
+        <li>To remove walls, click the Remove Walls button and drag on existing walls to remove them</li>
+        <li>To change the start position of the search, choose the Change Start button and click anywhere on the grid
+        </li>
+        <li>To change the end position of the search, choose the Change End button and click anywhere on the grid</li>
+        <li>The pink buttons represent algorithms you can use to search. Click on any one of them</li>
+        <li>To create a random arrangement of walls, click on the Random Walls button</li>
+        <li>To try out a maze, chooze a sample maze from the dropdown</li>
+        <li>Click Reset to revert all changes on the grid</li>
+    </ul>
+</div>
